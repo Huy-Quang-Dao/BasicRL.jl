@@ -1,5 +1,8 @@
 module BasicRL
 
-# Write your package code here.
+export reset!,step!,get_next_state_and_reward,is_done,render_grid,render_grid_policy,render_grid_policy_value,random_policy,GridWorld
+export value_iteration
 
+include("grid_world.jl")
+include("ValueIteration.jl")
 end
