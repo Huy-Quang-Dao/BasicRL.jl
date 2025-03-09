@@ -20,8 +20,10 @@ reset!(env)
 ### Method
 # # Value Iteration
 # V, policy = value_iteration(env)
-# Policy Iteration
-V, policy = policy_iteration(env)
+# # Policy Iteration
+# V, policy = policy_iteration(env)
+# Basic Monte-Carlo
+V, policy = basic_MC(env)
 
 ### Render
 render_grid_policy_value(env, policy, V)
