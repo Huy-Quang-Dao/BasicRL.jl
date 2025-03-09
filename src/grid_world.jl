@@ -17,7 +17,7 @@ mutable struct GridWorld
                        start_state::Tuple{Int, Int} = (1,1),
                        target_state::Tuple{Int, Int} = (5,5),
                        forbidden_states::Vector{Tuple{Int, Int}} = [(3,2),(4,3),(2,4),(4,5)],
-                       action_space::Vector{Tuple{Int, Int}} = [(0,1), (1,0), (0,-1), (-1,0)], # up , right , down, left 
+                       action_space::Vector{Tuple{Int, Int}} = [(0,1), (1,0), (0,-1), (-1,0),(0,0)], # up , right , down, left,stay
                        reward_target::Float64 = 10.0,
                        reward_forbidden::Float64 = -5.0,
                        reward_step::Float64 = -1.0)

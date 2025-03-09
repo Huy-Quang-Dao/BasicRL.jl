@@ -23,7 +23,7 @@ function policy_iteration(env::GridWorld, gamma::Float64=0.9, theta::Float64=1e-
             V[state] = rand(env.reward_forbidden:env.reward_target)
         end
     end
-    for _ in 1:max_iter
+    for j in 1:max_iter
         # Policy Evaluation
         epoch = 0
         while true
@@ -78,6 +78,7 @@ end
 
 
 env = GridWorld()
+reset!(env)
 V, policy = policy_iteration(env)
 render_grid_policy_value(env, policy, V)
 

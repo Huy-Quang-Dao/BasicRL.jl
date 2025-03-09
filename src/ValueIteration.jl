@@ -60,6 +60,7 @@ end
 
 
 # env = GridWorld()
+# reset!(env)
 # V, policy = value_iteration(env)
 # # render_grid_policy(env, policy)
 # render_grid_policy_value(env, policy, V)
